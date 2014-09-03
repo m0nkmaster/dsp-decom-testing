@@ -1,10 +1,16 @@
 #!/bin/bash
 
-cd /mnt/hgfs/workspace/sport
+homedir=~
+eval homedir=$homedir
+
+cd $homedir/workspace/sport-sandbox/sport
+git pull -p
 git checkout feature_SPORTSDATA-4764_dsp_to_ldp_football_tables
 
-cd /mnt/hgfs/workspace/onesport
+cd $homedir/workspace/sport-sandbox/onesport
+git pull -p
 git checkout feature_SPORTSDATA-4764_dsp_to_ldp_football_tables
 
-cd /mnt/hgfs/workspace/bbc-pal-library-onesport
+cd $homedir/workspace/sport-sandbox/bbc-pal-library-onesport
+git pull -p
 git checkout feature_SPORTSDATA-4764_dsp_to_ldp_football_tables
