@@ -15,7 +15,7 @@
                 sportContent,
                 parkedSportContent;
 
-            parkedUrl = url.replace('http://pal.', 'http://www.');
+            parkedUrl = url.replace('pal.', 'www.');
             parkedUrl = url.replace('sandbox.dev', 'test');
 
             var makeContentComparable = function(body) {
