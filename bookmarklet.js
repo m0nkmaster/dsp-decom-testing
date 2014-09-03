@@ -49,7 +49,7 @@
                 } else {
                     var checkIt = confirm("The code does not match.\n\nWould you like to view a full diff report?");
                     console.log(parkedSportContent);
-                    console.log(sportContent);
+                    //console.log(sportContent);
                     if (checkIt === true) {
                        visitDiffChecker(parkedSportContent, sportContent);
                     }
@@ -72,7 +72,7 @@
                 $('<form id="visitDiffChecker" method="POST" action="http://www.diffchecker.com/diff" target="_blank">' +
                 '<textarea name="file1">' + file1 + '</textarea>' +
                 '<textarea name="file2">' + file2 + '</textarea>' +
-                '<input type="hidden" value="month" name="storage-options" />' +
+                '<input type="hidden" name="storage-options" value="month" />' +
                 '</form>').appendTo('body').submit();
                 
                 $('form#visitDiffChecker').remove();
