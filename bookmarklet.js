@@ -48,7 +48,8 @@
                     alert("/sport and /clone/sport match; yay!\n\n" + url);
                 } else {
                     var checkIt = confirm("The code does not match.\n\nWould you like to view a full diff report?");
-                    var checkIt = confirm(parkedSportContent + "\n\n" + sportContent);
+                    console.log(parkedSportContent);
+                    console.log(sportContent);
                     if (checkIt === true) {
                        visitDiffChecker(parkedSportContent, sportContent);
                     }
