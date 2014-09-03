@@ -1,0 +1,11 @@
+<Directory "/mnt/hgfs/workspace/dsp-decom-testing/webapp/htdocs/dsp-decom-testing">
+
+    SetEnv PAL_WEBAPP 'dsp-decom-testing'
+
+    # setting up webapp root directory
+    SetEnv PAL_WEBAPP_ROOT /mnt/hgfs/workspace/dsp-decom-testing/webapp
+
+    # setting cert path
+    SetEnv PAL_APPLICATION_CERT_FILE /etc/pki/certificate.pem
+    
+</Directory>
