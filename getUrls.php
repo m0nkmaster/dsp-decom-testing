@@ -1,3 +1,4 @@
+#!/usr/bin/php
 <?php
 
 // Teams
@@ -9,6 +10,10 @@ foreach ($teams[0] as $url) {
     echo 'http://www.bbc.co.uk' . $url . "\n";
     echo 'http://www.bbc.co.uk' . $url . "/fixtures\n";
     echo 'http://www.bbc.co.uk' . $url . "/results\n";
+
+    echo 'http://m.bbc.co.uk' . $url . "\n";
+    echo 'http://m.bbc.co.uk' . $url . "/fixtures\n";
+    echo 'http://m.bbc.co.uk' . $url . "/results\n";
 }
 
 
@@ -22,4 +27,9 @@ foreach ($competitions[0] as $url) {
     echo 'http://www.bbc.co.uk' . $url . "/fixtures\n";
     echo 'http://www.bbc.co.uk' . $url . "/results\n";
     echo 'http://www.bbc.co.uk' . $url . "/table\n";
+
+    echo 'http://m.bbc.co.uk' . $url . "\n";
+    echo 'http://m.bbc.co.uk' . $url . "/fixtures\n";
+    echo 'http://m.bbc.co.uk' . $url . "/results\n";
+    echo 'http://m.bbc.co.uk' . $url . "/table\n";
 }
