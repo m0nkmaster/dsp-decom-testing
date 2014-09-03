@@ -1,0 +1,10 @@
+#!/bin/bash
+
+cd /mnt/hgfs/workspace/sport
+git checkout feature_SPORTSDATA-4764_dsp_to_ldp_football_tables
+
+cd /mnt/hgfs/workspace/onesport
+git checkout feature_SPORTSDATA-4764_dsp_to_ldp_football_tables
+
+cd /mnt/hgfs/workspace/bbc-pal-library-onesport
+git checkout feature_SPORTSDATA-4764_dsp_to_ldp_football_tables
