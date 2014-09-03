@@ -11,9 +11,12 @@
             var url = location.href;
             url = url.replace(/callback=[\w-_]*/, 'callback=toString');
             var domain = url.match(/http:\/\/[\w-.]*\//)[0].replace('http://', '').replace('/', ''),
-                parkedUrl = url.replace('/sport', '/parkedsport'),
+                parkedUrl = url,
                 sportContent,
                 parkedSportContent;
+
+            parkedUrl = url.replace('http://pal.', 'http://www.');
+            parkedUrl = url.replace('sandbox.dev', 'test');
 
             var makeContentComparable = function(body) {
 
@@ -24,7 +27,6 @@
                 }
 
                 // Acceptable differences
-                body = body.replace(/parkedsport/g, 'sport');
                 body = body.replace(/http:\/\/[\w\.]*.bbc.co.uk/g, '');
                 body = body.replace(/sport\/0\//g, 'sport/');
 
@@ -76,7 +78,7 @@
             };
             
             if (invalidUrl(url)) {
-                alert("This script only works with *.bbc.co.uk/sport urls.\n\nYou're not running this on a /parkedsport url are you?");
+                alert("This script only works with *.bbc.co.uk/sport urls.");
                 return false;
             }
 
