@@ -40,14 +40,15 @@
 
             var performDiff = function() {
                 if (parkedSportContent === '') {
-                    alert('No parkedsport equivalent was found for this page, on ' + domain);
+                    alert('No test equivalent was found for this page, on ' + domain);
                     return false;
                 }
 
                 if (compareHtml(parkedSportContent, sportContent)) {
-                    alert("/sport and /parkedsport match; yay!\n\n" + url);
+                    alert("/sport and /clone/sport match; yay!\n\n" + url);
                 } else {
                     var checkIt = confirm("The code does not match.\n\nWould you like to view a full diff report?");
+                    var checkIt = confirm("parkedSportContent\n\nsportContent");
                     if (checkIt === true) {
                        visitDiffChecker(parkedSportContent, sportContent);
                     }
