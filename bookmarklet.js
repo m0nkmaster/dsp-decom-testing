@@ -69,7 +69,7 @@
             };
             
             var visitDiffChecker = function(file1, file2) {
-                $('<form id="visitDiffChecker" method="POST" action="http://www.diffchecker.com/diff" target="_blank">' +
+                $('<form id="visitDiffChecker" method="POST" action="https://www.diffchecker.com/diff" target="_blank">' +
                 '<textarea name="file1">' + file1 + '</textarea>' +
                 '<textarea name="file2">' + file2 + '</textarea>' +
                 '<input type="hidden" name="storage-options" value="month" />' +
