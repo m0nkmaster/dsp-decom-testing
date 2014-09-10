@@ -1,0 +1,3 @@
+http://pal.sandbox.dev.bbc.co.uk/sport/football/teams/england
+http://m.sandbox.dev.bbc.co.uk/sport/football/teams/england
+http://pal.sandbox.dev.bbc.co.uk/sport/football/teams

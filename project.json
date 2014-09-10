@@ -1,0 +1,11 @@
+{
+    "name": "dsp-decom-testing",
+    "mDotSupport": true,
+    "mobileDotSupport": false,
+    "deviceRedirect": false,
+    "handle": {
+        "path": [
+            "^/clone"
+        ]
+    }
+}
